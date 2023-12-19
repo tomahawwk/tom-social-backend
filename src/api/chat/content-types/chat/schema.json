@@ -21,7 +21,8 @@
     "messages": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::message.message"
+      "target": "api::message.message",
+      "mappedBy": "chat"
     }
   }
 }

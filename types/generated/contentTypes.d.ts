@@ -411,6 +411,11 @@ export interface ApiMessageMessage extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    chat: Attribute.Relation<
+      'api::message.message',
+      'manyToOne',
+      'api::chat.chat'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
