@@ -14,6 +14,20 @@ module.exports = ({ env }) => ({
 			defaultDepth: 5,
 		},
 	},
+	"netlify-deployments": {
+		enabled: true,
+		config: {
+			accessToken: process.env.NETLIFY_DEPLOYMENTS_PLUGIN_ACCESS_TOKEN,
+			sites: [
+				{
+				  name: 'tom-social',
+				  id: "c423c160-5ff4-4874-a125-71dfbe0b751d",
+				  branch: 'main'
+				}
+			  ]
+		},
+		
+	},
     io: {
 		enabled: true,
 		config: {
