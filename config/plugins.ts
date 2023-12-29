@@ -32,7 +32,7 @@ module.exports = ({ env }) => ({
 		enabled: true,
 		config: {
 			IOServerOptions: {
-				cors: { origin: "http://localhost:3001", methods: ["GET", "POST"] },
+				cors: { origin: "https://tom-social-backend.onrender.com/", methods: ["GET", "POST"] },
 			},
 			contentTypes: {
 				message: "*",
